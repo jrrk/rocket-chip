@@ -18,7 +18,7 @@ class BaseConfig extends Config(
   new WithDefaultSlavePort() ++
   new WithTimebase(BigInt(1000000)) ++ // 1 MHz
   new WithDTS("freechips,rocketchip-unknown", Nil) ++
-  new WithNExtTopInterrupts(2) ++
+  new WithNExtTopInterrupts(4) ++
   new BaseSubsystemConfig()
 )
 
